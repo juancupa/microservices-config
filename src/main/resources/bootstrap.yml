@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configserver
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/juancupa/microservices-config
+          username: juancupa
+          password: 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
+          default-label: main
