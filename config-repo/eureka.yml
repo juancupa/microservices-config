@@ -6,8 +6,8 @@ eureka:
     hostname: ${app.eureka-server}
     leaseRenewalIntervalInSeconds: 30
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
     serviceUrl:
       defaultZone: http://${app.eureka-server}:${app.eureka-port}/eureka/
   server:
